@@ -875,7 +875,6 @@ footer {
       width: 100%;         /* only on small screens */
       display: block;      /* stacks naturally */
       text-align: center;  /* centers text inside */
-      margin-left: 10px;
     }
 
     .hero-buttons {
