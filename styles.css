@@ -828,6 +828,10 @@ footer {
 /* Responsive Styles */
 @media (max-width: 1024px) {
 
+    .logo {
+        text-align: center;
+    }
+
     .about-container,
     .contact-container {
         flex-direction: column;
@@ -844,6 +848,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .logo {
+        text-align: center;
+    }
     .hero h1 {
         font-size: 3rem;
     }
@@ -862,6 +869,10 @@ footer {
 }
 
 @media (max-width: 576px) {
+    .logo {
+        text-align: center;
+    }
+
     .hero h1 {
         font-size: 2.5rem;
     }
@@ -869,12 +880,6 @@ footer {
     .hero-buttons {
         flex-direction: column;
         gap: 15px;
-    }
-
-      .cta-button {
-      width: 100%;         /* only on small screens */
-      display: block;      /* stacks naturally */
-      text-align: center;  /* centers text inside */
     }
 
     .hero-buttons {
@@ -886,5 +891,14 @@ footer {
     }
 }
 
+@media (max-width: 480px) {
+    .logo {
+        text-align: center;
+    }
 
+    .cta-button {
+      display: none;
+    }
+  }
+ 
   
