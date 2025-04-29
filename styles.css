@@ -871,7 +871,14 @@ footer {
         gap: 15px;
     }
 
-    .hero-buttons .cta-button {
+      .cta-button {
+      width: 100%;         /* only on small screens */
+      display: block;      /* stacks naturally */
+      text-align: center;  /* centers text inside */
+      margin-left: 10px;
+    }
+
+    .hero-buttons {
         width: 100%;
     }
 
@@ -880,12 +887,5 @@ footer {
     }
 }
 
-@media (max-width: 480px) {
-    .cta-button {
-      width: 100%;         /* only on small screens */
-      display: block;      /* stacks naturally */
-      text-align: center;  /* centers text inside */
-      margin-left: 10px;
-    }
-  }
+
   
