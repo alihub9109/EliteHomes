@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Homes | Luxury Real Estate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <a href="#" class="logo">ELITE<span>HOMES</span></a>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#properties">Properties</a></li>
+                <li><a href="#tours">3D Tours</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="#contact" class="cta-button">Schedule a Viewing</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-content">
+            <h1>Your Dream Home Awaits</h1>
+            <p>Discover exclusive luxury properties tailored to your lifestyle. Experience the pinnacle of elegance, comfort, and sophistication.</p>
+            <div class="hero-buttons">
+                <a href="#properties" class="cta-button">View Listings</a>
+                <a href="#tours" class="cta-button outline-button">Take a Virtual Tour</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section class="section" id="properties">
+        <div class="section-title">
+            <h2>Featured Properties</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="properties-grid">
+            <!-- Property 1 -->
+            <div class="property-card" data-id="1">
+                <div class="property-image">
+                    <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Luxury Villa">
+                    <span class="property-badge">For Sale</span>
+                </div>
+                <div class="property-info">
+                    <h3>Oceanview Villa</h3>
+                    <div class="property-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Malibu, California</span>
+                    </div>
+                    <div class="property-features">
+                        <div class="feature">
+                            <i class="fas fa-bed"></i>
+                            <span>5 Beds</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-bath"></i>
+                            <span>4 Baths</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-vector-square"></i>
+                            <span>4,200 sqft</span>
+                        </div>
+                    </div>
+                    <div class="property-price">$8,750,000</div>
+                </div>
+            </div>
+
+            <!-- Property 2 -->
+            <div class="property-card" data-id="2">
+                <div class="property-image">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Modern Penthouse">
+                    <span class="property-badge">For Sale</span>
+                </div>
+                <div class="property-info">
+                    <h3>Skyline Penthouse</h3>
+                    <div class="property-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Manhattan, New York</span>
+                    </div>
+                    <div class="property-features">
+                        <div class="feature">
+                            <i class="fas fa-bed"></i>
+                            <span>3 Beds</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-bath"></i>
+                            <span>3.5 Baths</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-vector-square"></i>
+                            <span>3,800 sqft</span>
+                        </div>
+                    </div>
+                    <div class="property-price">$12,500,000</div>
+                </div>
+            </div>
+
+            <!-- Property 3 -->
+            <div class="property-card" data-id="3">
+                <div class="property-image">
+                    <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Luxury Apartment">
+                    <span class="property-badge">For Rent</span>
+                </div>
+                <div class="property-info">
+                    <h3>Harbor Lights Residence</h3>
+                    <div class="property-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Miami, Florida</span>
+                    </div>
+                    <div class="property-features">
+                        <div class="feature">
+                            <i class="fas fa-bed"></i>
+                            <span>2 Beds</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-bath"></i>
+                            <span>2 Baths</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-vector-square"></i>
+                            <span>1,850 sqft</span>
+                        </div>
+                    </div>
+                    <div class="property-price">$15,000/mo</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- 3D Tours Section -->
+<section class="section tours-section" id="tours">
+    <div class="section-title">
+        <h2>Immersive 3D Tours</h2>
+        <div class="divider"></div>
+        <p>Explore our properties from the comfort of your home with our interactive virtual tours.</p>
+    </div>
+    <div class="tours-container">
+        <!-- Tour 1 -->
+        <div class="tour-card">
+            <iframe src="https://my.matterport.com/show/?m=YOUR_MODEL_ID" allowfullscreen></iframe>
+            <div class="tour-overlay">
+                <h3>Modern Hillside Villa</h3>
+                <p>Beverly Hills, California</p>
+            </div>
+        </div>
+
+        <!-- Tour 2 -->
+        <div class="tour-card">
+            <iframe src="https://kuula.co/share/collection/7XKnN?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1" 
+                    allowfullscreen
+                    onerror="this.onerror=null;this.src='about:blank';"></iframe>
+            <div class="tour-overlay">
+                <h3>Waterfront Estate</h3>
+                <p>Miami Beach, Florida</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- About Us Section -->
+    <section class="section" id="about">
+        <div class="section-title">
+            <h2>About Elite Homes</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="about-container">
+            <div class="about-text">
+                <h2>Redefining Luxury Living</h2>
+                <p>Founded in 2005, Elite Homes has established itself as a premier real estate agency specializing in high-end residential and commercial properties across the globe. Our team of seasoned professionals brings decades of combined experience in luxury real estate, ensuring our clients receive unparalleled service and expertise.</p>
+                <p>We understand that purchasing a luxury property is more than a transaction—it's a lifestyle choice. That's why we go beyond the basics to provide a concierge-level service tailored to each client's unique needs and aspirations.</p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">18</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">$4.2B</div>
+                        <div class="stat-label">Properties Sold</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-model">
+                <canvas id="about-canvas"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section">
+        <div class="section-title">
+            <h2>Client Testimonials</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="testimonial-slider">
+            <div class="testimonial active">
+                <div class="testimonial-content">
+                    "Elite Homes made the entire process seamless. Their attention to detail and understanding of our needs resulted in finding our dream home within weeks. The virtual tours were incredibly helpful in narrowing down our options before visiting in person."
+                </div>
+                <div class="testimonial-author">James & Sarah Wilson</div>
+                <div class="testimonial-role">Purchased Oceanview Estate</div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    "As an international investor, I needed a team I could trust to handle everything remotely. Elite Homes' 3D tours and virtual consultations allowed me to confidently purchase a property in Miami without ever leaving Dubai. Their global network is impressive."
+                </div>
+                <div class="testimonial-author">Raj Patel</div>
+                <div class="testimonial-role">Investor, Commercial Properties</div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    "The level of service we received was exceptional. From the initial consultation to the closing, every detail was handled with professionalism and discretion. Their market knowledge helped us get the perfect property at the right price."
+                </div>
+                <div class="testimonial-author">Michael & Jennifer Carter</div>
+                <div class="testimonial-role">Purchased Manhattan Penthouse</div>
+            </div>
+            <div class="testimonial-nav">
+                <button class="active"></button>
+                <button></button>
+                <button></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="section-title">
+            <h2>Contact Us</h2>
+            <div class="divider"></div>
+            <p>Ready to begin your luxury property journey? Get in touch with our team today.</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-form">
+                <form id="inquiry-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="interest">Property Interest</label>
+                        <select id="interest" name="interest">
+                            <option value="">Select an option</option>
+                            <option value="residential">Residential</option>
+                            <option value="commercial">Commercial</option>
+                            <option value="investment">Investment</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Request a Call</button>
+                </form>
+            </div>
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2152560173187!2d-73.9810339242398!3d40.76143297138996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f9cfcb250d%3A0xdb570ddcb766e3a8!2sPark%20Ave%2C%20New%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1623256789012!5m2!1sen!2s" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Elite Homes</h3>
+                <p>Specializing in luxury residential and commercial properties worldwide. Our mission is to deliver exceptional service and find the perfect property to match your lifestyle.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#properties">Properties</a></li>
+                    <li><a href="#tours">3D Tours</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Property Valuation</a></li>
+                    <li><a href="#">Investment Consulting</a></li>
+                    <li><a href="#">Interior Design</a></li>
+                    <li><a href="#">Property Management</a></li>
+                    <li><a href="#">Relocation Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for the latest luxury property listings and market insights.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Elite Homes. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <!-- Property Modal -->
+    <div class="modal" id="property-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-property">
+                <div class="modal-images">
+                    <div class="modal-main-image">
+                        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Property Image">
+                    </div>
+                    <div class="modal-thumbnails">
+                        <div class="modal-thumbnail active">
+                            <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Thumbnail">
+                        </div>
+                        <div class="modal-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Thumbnail">
+                        </div>
+                        <div class="modal-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Thumbnail">
+                        </div>
+                        <div class="modal-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Thumbnail">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-details">
+                    <h2>Oceanview Villa</h2>
+                    <div class="modal-price">$8,750,000</div>
+                    <div class="modal-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Malibu, California</span>
+                    </div>
+                    <div class="modal-description">
+                        <p>This stunning contemporary villa offers breathtaking ocean views from nearly every room. The property features an open floor plan with floor-to-ceiling windows, a chef's kitchen with top-of-the-line appliances, and a master suite with a private balcony. Outdoor amenities include an infinity pool, spa, and expansive deck perfect for entertaining.</p>
+                    </div>
+                    <div class="modal-features">
+                        <div class="modal-feature">
+                            <i class="fas fa-bed"></i>
+                            <span>5 Bedrooms</span>
+                        </div>
+                        <div class="modal-feature">
+                            <i class="fas fa-bath"></i>
+                            <span>4.5 Bathrooms</span>
+                        </div>
+                        <div class="modal-feature">
+                            <i class="fas fa-vector-square"></i>
+                            <span>4,200 sqft</span>
+                        </div>
+                        <div class="modal-feature">
+                            <i class="fas fa-car"></i>
+                            <span>3 Garage Spaces</span>
+                        </div>
+                        <div class="modal-feature">
+                            <i class="fas fa-swimming-pool"></i>
+                            <span>Infinity Pool</span>
+                        </div>
+                        <div class="modal-feature">
+                            <i class="fas fa-umbrella-beach"></i>
+                            <span>Beach Access</span>
+                        </div>
+                    </div>
+                    <div class="modal-actions">
+                        <a href="#contact" class="cta-button">Schedule Viewing</a>
+                        <a href="#tours" class="cta-button outline-button">Virtual Tour</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.4/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.4/dist/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
